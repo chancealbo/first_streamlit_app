@@ -42,6 +42,5 @@ streamlit.header("The Fruit Load List Contains:")
 streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?')
-sql_command = '"INSERT INTO fruit_load_list({})"'.format(add_my_fruit)
-my_cur.execute(sql_command)
+my_cur.execute("INSERT INTO fruit_load_list VALUES test")
 
